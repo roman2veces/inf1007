@@ -99,3 +99,30 @@ class Personne:
 
 
 autre_moi = Personne.anniversaire(nom='roman', annee=2000)
+
+
+print("--------------------------")
+
+
+class MaClasse:
+    ATTRIBUT_PARTAGE = "hola"
+
+    def __init__(self) -> None:
+        pass
+
+
+mon_objet = MaClasse()
+# change l'attribut de classe mais juste pour cette instance
+mon_objet.ATTRIBUT_PARTAGE = "hi"
+mon_autre_objet = MaClasse()  # cette instance va avoir l'attribut partage original
+
+# NOTES:
+
+# 1 Dès qu'on modifie l'attribut partage (attribut de classe) mais dans une instance,
+# on brise le lien entre l'attribut de classe et l'objet
+
+# 2 Pour avoir une classe abstraite, il faut forcement avoir au moins une methode abstraite
+
+# 3 Dans le cas de l'heritage multiple, quand on appelle une fonction qui est definie dans les autres
+# classes parents, on regarde selon l'ordre les classes parents ont même niveau, ensuite le niveau plus haut,
+# et ainsi de suite
