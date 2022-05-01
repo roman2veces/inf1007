@@ -13,4 +13,12 @@ E = np.array([
     [-8/7, -4/7, 6/7, 1],
 ])
 
-print(np.matmul(E, K))
+u = np.array([
+    [-2],
+    [8],
+])
+
+v = np.array([[1, 0]])
+
+
+print(np.matmul(u, v))
