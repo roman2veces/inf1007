@@ -1,6 +1,6 @@
 # Quand on cree de type d'erreur en fait on cree des classes vide
 # pour pouvoir l'attraper par son nom
-from tables import ComplexCol
+# from tables import ComplexCol
 
 
 class Velo:
